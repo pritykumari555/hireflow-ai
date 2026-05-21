@@ -7,12 +7,13 @@ const app = express();
 
 // =======================
 // MIDDLEWARE
-// =======================
 app.use(cors({
     origin: [
         "http://localhost:3000",
-        "https://hireflow-ai-six.vercel.app"
+        "https://hireflow-frontend-ghce.vercel.app",
+        "https://hireflow-frontend-ghce-i77v278pn-pritykumari555s-projects.vercel.app"
     ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
 app.use(express.json());
